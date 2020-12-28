@@ -1,0 +1,14 @@
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/devapp?createDatabaseIfNotExist=true
+        username: dev
+        password: 123456
+        driver-class-name: org.postgresql.Driver
+    jpa:
+        database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+        hibernate:
+            ddl-auto: update
+hibernate:
+    search:
+        backend:
+            uris: http://localhost:9200
